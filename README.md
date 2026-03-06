@@ -39,21 +39,21 @@ afin de classifier l’image comme : rock, paper, scissors
 
 # Structure du projet
 ```text
-rock-paper-scissors/
+.
 │
-├── notebook/
-│ rps_training.ipynb # Notebook principal d'entraînement
+├── data/ # Dataset d'entraînement et de validation
 │
-├── models/
-│ rps.keras # Meilleur modèle sauvegardé
+├── models/ # Modèles sauvegardés
+│ └── rps.keras # Meilleur modèle entraîné
 │
-├── data/
-│ rps/ # Dataset d'entraînement
-│ rps-test-set/ # Dataset de validation
+├── test/ # Images utilisées pour tester le modèle
+│ ├── p.jpg
+│ ├── r.jpg
+│ └── s.jpg
 │
-│── imagesTest/ # images de test
-├── README.md
-├── requirements.txt
+├── rps.ipynb # Notebook principal (entraînement + tests)
+├── requirements.txt # Dépendances Python du projet
+└── README.md # Documentation du projet
 ```
 
 ---
